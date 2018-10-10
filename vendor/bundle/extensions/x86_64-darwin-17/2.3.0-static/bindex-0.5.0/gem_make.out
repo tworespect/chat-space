@@ -1,0 +1,15 @@
+current directory: /Users/yujikino/projects/chat-space/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/yujikino/.rbenv/versions/2.3.7/bin/ruby -r ./siteconf20181010-92717-1q19gu5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yujikino/projects/chat-space/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/yujikino/projects/chat-space/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/yujikino/projects/chat-space/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20181010-92717-czeghn/bindex
