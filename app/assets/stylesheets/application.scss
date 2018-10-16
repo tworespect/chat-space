@@ -1,4 +1,8 @@
 @import "font-awesome";
-@import "./reset";
-@import "./config/variable";
+@import "config/reset";
+@import "config/color";
 @import "./messages";
+@import "./chat_side";
+@import "./form";
+@import "./user";
+@import "./flash";
