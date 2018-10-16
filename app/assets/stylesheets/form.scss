@@ -1,0 +1,39 @@
+.form {
+    background-color: #DDDDDD;
+    box-sizing: border-box;
+    height: 90px;
+    min-height: 90px;
+    padding: 20px 50px 20px 40px;
+    position: relative;
+    &__message {
+        border: none;
+        box-sizing: border-box;
+        float: left;
+        height: 50px;
+        padding: 0 10px;
+        width: calc(100% - 100px);
+    }
+    &__mask {
+        background-color: $white;
+        float: left;
+    }
+    &__mask__image {
+        font-size: 20px;
+        line-height: 50px;
+        position: absolute;
+        right: 160px;
+        bottom: 20px;
+    }
+    &__submit {
+        background-color: $light-blue;
+        border: none;
+        color: $white;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 30px;
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+    }
+}
+
