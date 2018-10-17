@@ -10,15 +10,18 @@
           = link_to edit_user_path(current_user) do
             = fa_icon "cog" , class: "side-content__header__icon"
     .chat-side__groups
-      .chat-side__groups-list
+      - current_user.groups.each do |group|
         .chat-side__group
-          .chat-side__group-name<group-name
-          .chat-side__group-message<message
+          = link_to group_messages_path(group), class: "link" do
+            .chat-side__group-name
+              = group.name
+            .chat-side__group-message
+              メッセージはまだありません。
   .chat-main
     .header
       .right-header
         .right-header-title
-        = link_to "Edit", "", class: 'edit-btn'
+        = link_to "Edit", edit_group_path(current_user), class: 'edit-btn'
       .left-header
         .left-header-title<group-name
         .left-header-member<group-member
