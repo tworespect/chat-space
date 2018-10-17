@@ -35,7 +35,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
-## membersテーブル
+## group_userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -54,7 +54,7 @@ Things you may want to cover:
 |mail|string|true,null: false, unique: true|
 
 ### Association
-- has_many :groups,through: members
+- has_many :groups,through: group_user
 - has_many :messages
 - has_many :members
 
@@ -65,7 +65,7 @@ Things you may want to cover:
 |name|string|null: false, unique: true|
 
 ### Association
-- has_many :users,through: members
-- has_many :members
+- has_many :users,through: group_user
+- has_many :group_users
 - has_many :messages
 
