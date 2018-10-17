@@ -42,10 +42,12 @@
     height: calc(100% - 90px);
     width: 100%;
     background-color: #2f3e51;
+    padding: 0 20px;
 }
 
 .chat-side__group {
-    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px 0 40px;
     &-name{
         color: $white;
         font-size: 15px;
@@ -54,4 +56,8 @@
         color: $white;
         font-size: 11px;
     }
+}
+
+.link{
+  text-decoration: none;
 }
