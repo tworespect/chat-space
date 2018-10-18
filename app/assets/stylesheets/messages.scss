@@ -1,6 +1,9 @@
 html,body,.notification,.chat-side,.chat-main {
     height: 100%;
 }
+a{
+    text-decoration: none;
+}
 
 .chat-main {
     width: calc( 100% - 300px );
@@ -54,8 +57,11 @@ html,body,.notification,.chat-side,.chat-main {
     color: #999;
 }
 
-.message-body{
+.message-body__content{
     font-size: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     padding-top: 10px;
+}
+.lower-message__image{
+    padding-top: 20px;
 }

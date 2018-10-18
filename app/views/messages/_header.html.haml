@@ -1,0 +1,11 @@
+.header
+  .right-header
+    .right-header-title
+    = link_to "Edit", edit_group_path(@group), class: 'edit-btn'
+  .left-header
+    .left-header-title
+      = @group.name
+    .left-header-member
+      Member :
+      - @group.users.each do |member|
+        = member.name + ", "
