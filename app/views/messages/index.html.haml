@@ -3,7 +3,7 @@
     = render "chatside"
   .chat-main
     = render "header"
-    .messages
+    .messages.js-message
       = render @messages
     .form
       = form_for [@group, @message] do |f|
@@ -13,3 +13,4 @@
             = fa_icon 'picture-o', class: 'icon'
             = f.file_field :image, class: 'hidden', style: 'display:none'
         = f.submit 'Send', class: 'form__submit'
+
