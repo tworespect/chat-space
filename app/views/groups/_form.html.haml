@@ -26,9 +26,9 @@
     - group.users.each do |user|
       .chat-group-form__field--right
         #chat-group-users
-          %input{:name => "group[user_ids][]", :type => "hidden", :value => user.id}
           .chat-group-user.clearfix
             = user.name
+            %input{:name => "group[user_ids][]", :type => "hidden", :value => user.id}
             %a.user_search_remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn 削除
 
           #member_search_result
