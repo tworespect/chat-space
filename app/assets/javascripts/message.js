@@ -41,7 +41,7 @@ $(function(){
     var html = buildHTML(message);
     $('.messages').append(html)
     $('#new_message')[0].reset();
-    $('.messages.js-message').animate({scrollTop: $('.messages.js-message')[0].scrollHeight}, 'fast');
+    $('.messages.js-message').animate({scrollTop: $('.messages.js-message')[0].scrollHeight}, 2500);
   })
   .fail(function(){
     alert('error');
