@@ -5,6 +5,13 @@ class MessagesController < ApplicationController
 	def index
     @message = Message.new
     @messages = @group.messages.includes(:user).order("created_at ASC")
+
+    respond_to do |format|
+      format.html
+      format.json do
+        @new_message = @group.messages.where('id > ?', params[:last_message_id])
+      end
+    end
   end
 
   def create
