@@ -76,7 +76,7 @@ $(function(){
       .fail(function(json) {
       alert('自動更新に失敗しました');
       });
-      }else {
+      } else {
       clearInterval(interval);
        }
   });
