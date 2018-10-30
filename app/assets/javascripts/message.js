@@ -18,8 +18,10 @@ $(document).on('turbolinks:load', function(){
                         <p class="message-body__content">
                         ${message.content}
                         </p>
-                      </div class='lower-message__image' >
+                      </div>
+                      <div class='lower-message__image' >
                         ${insertImage}
+                      </div>
                     </div>
                 </div>`
       return html;
