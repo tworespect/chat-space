@@ -20,5 +20,3 @@ vendor/bundle
 .byebug_history
 
 config/secrets.yml
-
-public/uploads

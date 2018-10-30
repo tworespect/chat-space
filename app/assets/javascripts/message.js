@@ -19,9 +19,7 @@ $(document).on('turbolinks:load', function(){
                         ${message.content}
                         </p>
                       </div>
-                      <div class='lower-message__image' >
                         ${insertImage}
-                      </div>
                     </div>
                 </div>`
       return html;
