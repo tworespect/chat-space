@@ -1,4 +1,4 @@
-$(function(){
+$(document).on('turbolinks:load', function(){
     function buildHTML(message){
       var insertImage = '';
       if (message.image){
@@ -18,7 +18,7 @@ $(function(){
                         <p class="message-body__content">
                         ${message.content}
                         </p>
-                      </div>
+                      </div class='lower-message__image' >
                         ${insertImage}
                     </div>
                 </div>`
