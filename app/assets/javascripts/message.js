@@ -49,19 +49,12 @@ $(document).on('turbolinks:load', function(){
   return false;
   });
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   function scroll() {
     $('.messages.js-message').animate({scrollTop: $('.messages.js-message')[0].scrollHeight}, 2500);
   }
 
-<<<<<<< Updated upstream
+
   var auto = (function() {
-=======
-   var auto = (function() {
->>>>>>> Stashed changes
       if (window.location.href.match(/\/groups\/\d+\/messages/)) {
       var last_message_id = $('.message:last').attr('id');
     $.ajax({
@@ -72,7 +65,6 @@ $(document).on('turbolinks:load', function(){
         },
       dataType: 'json'
     })
-// json: sabun no messages
     .done(function(data) {
       data.forEach(function(message) {
       var html = buildHTML(message);
@@ -83,15 +75,9 @@ $(document).on('turbolinks:load', function(){
       .fail(function(json) {
       alert('自動更新に失敗しました');
       });
-<<<<<<< Updated upstream
       } else {
       clearInterval(interval);
        }
-=======
-      }else {
-        clearInterval(interval);
-      }
->>>>>>> Stashed changes
   });
    var interval = setInterval(auto, 5000 );
 });
